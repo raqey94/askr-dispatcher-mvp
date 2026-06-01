@@ -1,0 +1,28 @@
+{
+  "drivers": [
+    {
+      "id": "sharaf",
+      "name": "شرف",
+      "cities": ["خميس مشيط", "خميس"],
+      "type": "local",
+      "max_open_orders": 10,
+      "active": true
+    },
+    {
+      "id": "hisham",
+      "name": "هشام",
+      "cities": ["أبها", "ابها"],
+      "type": "local",
+      "max_open_orders": 10,
+      "active": true
+    },
+    {
+      "id": "abu_rayan",
+      "name": "أبو ريان",
+      "cities": ["external", "unknown"],
+      "type": "external",
+      "max_open_orders": 15,
+      "active": true
+    }
+  ]
+}

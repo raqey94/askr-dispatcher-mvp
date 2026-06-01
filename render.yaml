@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: askr-dispatcher-mvp
+    env: python
+    plan: starter
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: DRY_RUN
+        value: "true"
+      - key: AUTO_ADD_ORDER_NOTE
+        value: "false"
